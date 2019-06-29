@@ -1,0 +1,20 @@
+uuid: 07ca8651-1fc6-4b81-9fc1-cbf29a01df01
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uaf
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: uaf_local_actions
+theme: uaf
+region: header
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

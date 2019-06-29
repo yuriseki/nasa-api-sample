@@ -1,0 +1,22 @@
+uuid: 127a4683-1ae4-4310-9567-3931495816ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uaf
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: uaf_content
+theme: uaf
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

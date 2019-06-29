@@ -1,0 +1,22 @@
+uuid: 64137035-5ead-4646-b272-6245a4dff96a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uaf
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: uaf_local_tasks
+theme: uaf
+region: header
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

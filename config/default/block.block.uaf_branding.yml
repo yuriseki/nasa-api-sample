@@ -1,0 +1,25 @@
+uuid: 7e591439-133b-44e0-ae38-e7438c8efbc7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uaf
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: uaf_branding
+theme: uaf
+region: navigation
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

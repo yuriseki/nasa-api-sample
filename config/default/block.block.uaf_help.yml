@@ -1,0 +1,22 @@
+uuid: 38333c95-b76a-4431-b31f-2fe0c3ceca6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - uaf
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: uaf_help
+theme: uaf
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

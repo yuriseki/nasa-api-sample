@@ -1,0 +1,22 @@
+uuid: 47c00b86-8b01-4b56-9a11-263fa98dca11
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uaf
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: uaf_breadcrumbs
+theme: uaf
+region: header
+weight: -4
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

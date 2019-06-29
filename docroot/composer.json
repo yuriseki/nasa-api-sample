@@ -7,7 +7,8 @@
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
         "drupal/console": "^1.9",
-        "drupal/admin_toolbar": "^1.27"
+        "drupal/admin_toolbar": "^1.27",
+        "drupal/bootstrap": "^3.20"
     },
     "replace": {
         "drupal/core": "^8.7"

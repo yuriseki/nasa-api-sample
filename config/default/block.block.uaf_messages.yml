@@ -1,0 +1,22 @@
+uuid: f061b016-60e3-4a0d-bd1b-0ff9081e44f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uaf
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: uaf_messages
+theme: uaf
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
