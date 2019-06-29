@@ -77,8 +77,7 @@ class NasaServiceConsumer {
     if (count($last_updated_date)) {
       $last_updated = $last_updated_date[0];
     }
-    // TODO remove it.
-    $last_updated = '2019-06-01';
+
     $result = $this->loadNasaExoplanets($last_updated);
     if (!count($result)) {
       return;
