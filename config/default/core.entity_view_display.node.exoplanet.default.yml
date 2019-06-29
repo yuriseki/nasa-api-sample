@@ -1,0 +1,336 @@
+uuid: f44fc1f0-c2c2-4fdd-831b-0e185930d7ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.exoplanet.field_dec
+    - field.field.node.exoplanet.field_dec_str
+    - field.field.node.exoplanet.field_gaia_gmag
+    - field.field.node.exoplanet.field_pl_bmassj
+    - field.field.node.exoplanet.field_pl_bmassprov
+    - field.field.node.exoplanet.field_pl_controvflag
+    - field.field.node.exoplanet.field_pl_dens
+    - field.field.node.exoplanet.field_pl_discmethod
+    - field.field.node.exoplanet.field_pl_facility
+    - field.field.node.exoplanet.field_pl_hostname
+    - field.field.node.exoplanet.field_pl_k2flag
+    - field.field.node.exoplanet.field_pl_kepflag
+    - field.field.node.exoplanet.field_pl_letter
+    - field.field.node.exoplanet.field_pl_orbeccen
+    - field.field.node.exoplanet.field_pl_orbincl
+    - field.field.node.exoplanet.field_pl_orbper
+    - field.field.node.exoplanet.field_pl_orbsmax
+    - field.field.node.exoplanet.field_pl_pnum
+    - field.field.node.exoplanet.field_pl_radj
+    - field.field.node.exoplanet.field_pl_ttvflag
+    - field.field.node.exoplanet.field_ra
+    - field.field.node.exoplanet.field_ra_str
+    - field.field.node.exoplanet.field_rowupdate
+    - field.field.node.exoplanet.field_st_dist
+    - field.field.node.exoplanet.field_st_mass
+    - field.field.node.exoplanet.field_st_optband
+    - field.field.node.exoplanet.field_st_optmag
+    - field.field.node.exoplanet.field_st_rad
+    - field.field.node.exoplanet.field_st_teff
+    - node.type.exoplanet
+  module:
+    - datetime
+    - user
+id: node.exoplanet.default
+targetEntityType: node
+bundle: exoplanet
+mode: default
+content:
+  field_dec:
+    weight: 122
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_dec_str:
+    weight: 120
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_gaia_gmag:
+    weight: 126
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_pl_bmassj:
+    weight: 112
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_pl_bmassprov:
+    weight: 113
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pl_controvflag:
+    weight: 104
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_pl_dens:
+    weight: 115
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_pl_discmethod:
+    weight: 103
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pl_facility:
+    weight: 131
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pl_hostname:
+    weight: 101
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pl_k2flag:
+    weight: 118
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_pl_kepflag:
+    weight: 117
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_pl_letter:
+    weight: 102
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pl_orbeccen:
+    weight: 110
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_pl_orbincl:
+    weight: 111
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_pl_orbper:
+    weight: 106
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_pl_orbsmax:
+    weight: 109
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_pl_pnum:
+    weight: 105
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_pl_radj:
+    weight: 114
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_pl_ttvflag:
+    weight: 116
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_ra:
+    weight: 121
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_ra_str:
+    weight: 119
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_rowupdate:
+    weight: 130
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_st_dist:
+    weight: 123
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_st_mass:
+    weight: 128
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_st_optband:
+    weight: 125
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_st_optmag:
+    weight: 124
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_st_rad:
+    weight: 129
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_st_teff:
+    weight: 127
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

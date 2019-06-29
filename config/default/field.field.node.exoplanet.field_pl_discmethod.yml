@@ -1,0 +1,19 @@
+uuid: d0293807-e935-4e7d-96f7-a78f6ecc283a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_discmethod
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_discmethod
+field_name: field_pl_discmethod
+entity_type: node
+bundle: exoplanet
+label: 'Discovery Method'
+description: 'Method by which the planet was first identified.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

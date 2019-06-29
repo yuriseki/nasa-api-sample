@@ -1,0 +1,18 @@
+uuid: 501d7ba2-7b05-4f72-8001-67e2969743f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_pl_ttvflag
+field_name: field_pl_ttvflag
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

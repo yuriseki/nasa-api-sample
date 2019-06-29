@@ -1,0 +1,23 @@
+uuid: 80e0b255-21a7-47d4-af1b-8f16909f51fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_st_dist
+    - node.type.exoplanet
+id: node.exoplanet.field_st_dist
+field_name: field_st_dist
+entity_type: node
+bundle: exoplanet
+label: 'Distance (pc)'
+description: 'Distance to the planetary system in units of parsecs.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

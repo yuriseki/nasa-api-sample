@@ -1,0 +1,18 @@
+uuid: 80b6b123-1a39-444d-b858-7d6bd05e5412
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_pl_controvflag
+field_name: field_pl_controvflag
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

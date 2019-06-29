@@ -1,0 +1,19 @@
+uuid: bd741247-28bf-4128-8c37-835ee2cd7e39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_letter
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_letter
+field_name: field_pl_letter
+entity_type: node
+bundle: exoplanet
+label: 'Planet Letter'
+description: 'Letter assigned to the planetary component of a planetary system.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

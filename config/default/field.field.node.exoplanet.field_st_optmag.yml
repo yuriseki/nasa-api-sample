@@ -1,0 +1,23 @@
+uuid: 6a0930e7-f79b-4e55-9df1-2383272e145c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_st_optmag
+    - node.type.exoplanet
+id: node.exoplanet.field_st_optmag
+field_name: field_st_optmag
+entity_type: node
+bundle: exoplanet
+label: 'Optical Magnitude [mag]'
+description: 'Brightness of the host star as measured using the V (Johnson) or the Kepler-band in units of magnitudes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

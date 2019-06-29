@@ -1,0 +1,4 @@
+services:
+  uaf_nasa.consumer:
+    class: Drupal\uaf_nasa\NasaServiceConsumer
+    arguments: ['@service_container']

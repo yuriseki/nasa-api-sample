@@ -1,0 +1,18 @@
+uuid: 69180dc4-6c4a-4089-a805-b413bf4f8a67
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.exoplanet
+id: node.exoplanet.title
+field_name: title
+entity_type: node
+bundle: exoplanet
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains uaf_nasa.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uaf_nasa_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the uaf_nasa module.
+    case 'help.page.uaf_nasa':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('NASA service consumer') . '</p>';
+      return $output;
+
+    default:
+  }
+}

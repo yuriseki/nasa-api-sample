@@ -1,0 +1,21 @@
+uuid: b2bf8020-d230-4a89-87a5-e3963b6c2b8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rowupdate
+    - node.type.exoplanet
+  module:
+    - datetime
+id: node.exoplanet.field_rowupdate
+field_name: field_rowupdate
+entity_type: node
+bundle: exoplanet
+label: 'Date of Last Update'
+description: 'Date of last update of the planet parameters.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

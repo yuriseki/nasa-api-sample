@@ -1,0 +1,19 @@
+uuid: be7f4fe3-5f8c-4d0b-b260-67c75eea76c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dec_str
+    - node.type.exoplanet
+id: node.exoplanet.field_dec_str
+field_name: field_dec_str
+entity_type: node
+bundle: exoplanet
+label: 'Dec (sexagesimal)'
+description: 'Declination of the planetary system in sexagesimal notation.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

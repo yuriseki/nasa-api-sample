@@ -1,0 +1,23 @@
+uuid: abf7f203-0a41-4de2-89d2-baf940409cc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_pnum
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_pnum
+field_name: field_pl_pnum
+entity_type: node
+bundle: exoplanet
+label: 'Number of Planets in System'
+description: 'Number of planets in the planetary system.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

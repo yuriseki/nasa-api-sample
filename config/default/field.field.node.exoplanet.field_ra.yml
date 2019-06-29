@@ -1,0 +1,23 @@
+uuid: 5f144aac-ac37-44ee-a37d-4641a56d6e33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ra
+    - node.type.exoplanet
+id: node.exoplanet.field_ra
+field_name: field_ra
+entity_type: node
+bundle: exoplanet
+label: 'RA (decimal degrees)'
+description: 'Right Ascension of the planetary system in decimal degrees.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

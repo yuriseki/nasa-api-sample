@@ -1,0 +1,23 @@
+uuid: cfb7ed34-7064-40e1-8762-04bd58ed23e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_bmassj
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_bmassj
+field_name: field_pl_bmassj
+entity_type: node
+bundle: exoplanet
+label: 'Planet Mass or M*sin(i) [Jupiter mass]'
+description: 'Best planet mass estimate available, in order of preference: Mass, M*sin(i)/sin(i), or M*sin(i), depending on availability, and measured in Jupiter masses. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

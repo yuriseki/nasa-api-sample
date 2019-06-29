@@ -1,0 +1,23 @@
+uuid: c30f7be2-c3f1-47d3-877f-9b0f31150d2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_kepflag
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_kepflag
+field_name: field_pl_kepflag
+entity_type: node
+bundle: exoplanet
+label: 'Kepler Field Flag'
+description: 'Flag indicating if the planetary system signature is present in data taken with the Kepler mission (1=yes, 0=no).'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

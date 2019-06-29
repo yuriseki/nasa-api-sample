@@ -1,0 +1,19 @@
+uuid: 943e167c-be76-40a7-88b9-12071a9200c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_hostname
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_hostname
+field_name: field_pl_hostname
+entity_type: node
+bundle: exoplanet
+label: 'Host Star Name'
+description: 'Stellar name most commonly used in the literature.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

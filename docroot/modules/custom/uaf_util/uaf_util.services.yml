@@ -1,0 +1,4 @@
+services:
+  uaf_util.rest:
+    class: Drupal\uaf_util\RestService
+

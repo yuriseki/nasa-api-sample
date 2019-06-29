@@ -1,0 +1,20 @@
+uuid: 6030fce6-0bbc-4cb1-b642-35b2b7a300af
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_pl_pnum
+field_name: field_pl_pnum
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

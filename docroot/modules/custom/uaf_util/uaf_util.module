@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains uaf_util.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uaf_util_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the uaf_util module.
+    case 'help.page.uaf_util':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Utility classes') . '</p>';
+      return $output;
+
+    default:
+  }
+}

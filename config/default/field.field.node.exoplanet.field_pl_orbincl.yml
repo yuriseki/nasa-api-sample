@@ -1,0 +1,23 @@
+uuid: e3e54fd7-b7b3-47d5-ad6e-862ecf41223c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_orbincl
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_orbincl
+field_name: field_pl_orbincl
+entity_type: node
+bundle: exoplanet
+label: 'Inclination (deg)'
+description: 'Angular distance of the orbital plane from the line of sight.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

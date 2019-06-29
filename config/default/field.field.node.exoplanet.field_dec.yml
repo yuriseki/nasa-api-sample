@@ -1,0 +1,23 @@
+uuid: aee06e1a-53aa-4925-85dd-523525d4796a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dec
+    - node.type.exoplanet
+id: node.exoplanet.field_dec
+field_name: field_dec
+entity_type: node
+bundle: exoplanet
+label: 'Dec (decimal degrees)'
+description: 'Declination of the planetary system in decimal degrees.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

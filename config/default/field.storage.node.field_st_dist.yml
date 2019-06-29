@@ -1,0 +1,18 @@
+uuid: f5b99884-a8c9-412e-a498-50ef68eac0c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_st_dist
+field_name: field_st_dist
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,5 @@
+name: 'UAF Util'
+type: module
+description: 'Utility classes'
+core: 8.x
+package: 'Custom'

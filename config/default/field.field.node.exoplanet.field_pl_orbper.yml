@@ -1,0 +1,23 @@
+uuid: 0ac34f2d-b8e2-49f9-83c6-a05b6234a76a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_orbper
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_orbper
+field_name: field_pl_orbper
+entity_type: node
+bundle: exoplanet
+label: 'Orbital Period (days)'
+description: 'Time the planet takes to make a complete orbit around the host star or system.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

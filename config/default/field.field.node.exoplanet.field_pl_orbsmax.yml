@@ -1,0 +1,23 @@
+uuid: 74bffea6-54d6-47ec-86ba-5ceaf539456b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_orbsmax
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_orbsmax
+field_name: field_pl_orbsmax
+entity_type: node
+bundle: exoplanet
+label: 'Orbit Semi-Major Axis (AU)'
+description: 'The longest radius of an elliptic orbit, or, for exoplanets detected via gravitational microlensing or direct imaging, the projected separation in the plane of the sky.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

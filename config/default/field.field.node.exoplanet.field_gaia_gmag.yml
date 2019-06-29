@@ -1,0 +1,23 @@
+uuid: 65b46666-f4a1-4477-8613-16ee098e4ec2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gaia_gmag
+    - node.type.exoplanet
+id: node.exoplanet.field_gaia_gmag
+field_name: field_gaia_gmag
+entity_type: node
+bundle: exoplanet
+label: 'G-band (Gaia) [mag]'
+description: 'Brightness of the host star as measuring using the Gaia band in units of magnitudes. Objects matched to Gaia using the Hipparcos or 2MASS IDs provided in Gaia DR2.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

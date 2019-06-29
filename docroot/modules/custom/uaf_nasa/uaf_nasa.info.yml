@@ -1,0 +1,7 @@
+name: 'Nasa service consumer'
+type: module
+description: 'NASA service consumer'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - uaf_util

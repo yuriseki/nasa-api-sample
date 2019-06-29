@@ -1,0 +1,23 @@
+uuid: e9babc91-1f4a-4a9e-8df1-fdb8bf1170df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_st_mass
+    - node.type.exoplanet
+id: node.exoplanet.field_st_mass
+field_name: field_st_mass
+entity_type: node
+bundle: exoplanet
+label: 'Stellar Mass (solar mass)'
+description: 'Amount of matter contained in the star, measured in units of masses of the Sun.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

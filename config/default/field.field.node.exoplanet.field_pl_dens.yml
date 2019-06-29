@@ -1,0 +1,23 @@
+uuid: 67ea7d67-e68d-40dc-a033-d2b0ede39d22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_dens
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_dens
+field_name: field_pl_dens
+entity_type: node
+bundle: exoplanet
+label: 'Planet Density (g/cm**3)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

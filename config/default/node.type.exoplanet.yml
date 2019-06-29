@@ -1,0 +1,17 @@
+uuid: b885211b-763b-4540-82a6-642f5e872380
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Exoplanet
+type: exoplanet
+description: 'Exoplanet information.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

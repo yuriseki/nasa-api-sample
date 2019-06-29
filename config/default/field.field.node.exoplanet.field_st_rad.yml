@@ -1,0 +1,23 @@
+uuid: 85c24150-49ab-4691-a215-311ca630a865
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_st_rad
+    - node.type.exoplanet
+id: node.exoplanet.field_st_rad
+field_name: field_st_rad
+entity_type: node
+bundle: exoplanet
+label: 'Stellar Radius (solar radii)'
+description: 'Length of a line segment from the center of the star to its surface, measured in units of radius of the Sun.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

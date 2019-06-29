@@ -1,0 +1,23 @@
+uuid: f5239a0a-c967-4bc1-9a43-5ca9df8bdcdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_radj
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_radj
+field_name: field_pl_radj
+entity_type: node
+bundle: exoplanet
+label: 'Planet Radius (Jupiter radii)'
+description: 'Length of a line segment from the center of the planet to its surface, measured in units of radius of Jupiter.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

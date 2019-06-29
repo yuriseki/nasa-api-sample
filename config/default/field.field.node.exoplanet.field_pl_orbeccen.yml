@@ -1,0 +1,23 @@
+uuid: 23c72ae1-faa5-49cb-a3c6-370b2b5797ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_orbeccen
+    - node.type.exoplanet
+id: node.exoplanet.field_pl_orbeccen
+field_name: field_pl_orbeccen
+entity_type: node
+bundle: exoplanet
+label: Eccentricity
+description: 'Amount by which the orbit of the planet deviates from a perfect circle.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

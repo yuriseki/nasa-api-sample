@@ -1,0 +1,23 @@
+uuid: 79b467ec-3699-4ad0-85a3-b81b5893d140
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_st_teff
+    - node.type.exoplanet
+id: node.exoplanet.field_st_teff
+field_name: field_st_teff
+entity_type: node
+bundle: exoplanet
+label: 'Effective Temperature (K)'
+description: 'Temperature of the star as modeled by a black body emitting the same total amount of electromagnetic radiation.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float
