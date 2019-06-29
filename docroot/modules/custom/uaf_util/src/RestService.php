@@ -2,14 +2,19 @@
 
 namespace Drupal\uaf_util;
 
+/**
+ * Class RestService.
+ *
+ * @package Drupal\uaf_util
+ */
 class RestService {
 
   /**
    * Call a request.
    *
-   * @param $requesturl
+   * @param string $requesturl
    *   The request service URL.
-   * @param $method
+   * @param string $method
    *   The method to be used/.
    * @param array $params
    *   Additional parameters.
@@ -17,7 +22,7 @@ class RestService {
    * @return bool|string
    *   The request returned.
    */
-  public function callRequest($requesturl, $method, $params = []) {
+  public function callRequest($requesturl, $method, array $params = []) {
 
     $url = $requesturl;
 

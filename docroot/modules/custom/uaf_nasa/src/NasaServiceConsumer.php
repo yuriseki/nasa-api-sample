@@ -2,25 +2,33 @@
 
 namespace Drupal\uaf_nasa;
 
-use Drupal\Console\Bootstrap\Drupal;
-use Drupal\Core\Database\Database;
-use Drupal\Core\Plugin\Factory\ContainerFactory;
 use Drupal\node\Entity\Node;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
+/**
+ * Class NasaServiceConsumer.
+ *
+ * @package Drupal\uaf_nasa
+ */
 class NasaServiceConsumer {
 
   /**
+   * The rest service.
+   *
    * @var \Drupal\uaf_util\RestService
    */
   private $rest;
 
   /**
+   * Connection service.
+   *
    * @var \Drupal\Core\Database\Connection
    */
   private $connection;
 
   /**
+   * Entity query service.
+   *
    * @var \Drupal\Core\Entity\Query\QueryFactory
    */
   private $entityQuery;
@@ -37,19 +45,27 @@ class NasaServiceConsumer {
   /**
    * Load exoplanets from NASA.
    *
-   * @param null $last_updated_date
+   * @param string|null $last_updated_date
    *   The last updated date on the exoplanet.
+   * @param string|null $planet_name
+   *   The name of the exoplanet to get from NASA.
    *
-   * @return bool|string
+   * @return bool|mixed
+   *   The json object or false.
    */
-  public function loadNasaExoplanets($last_updated_date = NULL) {
+  public function loadNasaExoplanets($last_updated_date = NULL, $planet_name = NULL) {
     $params = [
       'table' => 'exoplanets',
       'format' => 'json',
+      'order' => 'rowupdate asc',
     ];
 
     if ($this->isValidateDate($last_updated_date)) {
       $params['where'] = "rowupdate>'$last_updated_date'";
+    }
+
+    if (!empty($planet_name)) {
+      $params['where'] = "pl_name='$planet_name'";
     }
 
     $result = $this->rest->callRequest('https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI',
@@ -85,7 +101,7 @@ class NasaServiceConsumer {
 
     foreach ($result as $item) {
 
-      $existent_node =  $this->entityQuery->get('node')
+      $existent_node = $this->entityQuery->get('node')
         ->condition('title', $item->pl_name)
         ->execute();
 
@@ -116,10 +132,11 @@ class NasaServiceConsumer {
   /**
    * Check if a given string is a valid date using the format Y-m-d.
    *
-   * @param $date
+   * @param string $date
    *   The string representing the date.
    *
    * @return bool
+   *   Boolean indicating if the
    */
   private function isValidateDate($date) {
     if (empty($date)) {

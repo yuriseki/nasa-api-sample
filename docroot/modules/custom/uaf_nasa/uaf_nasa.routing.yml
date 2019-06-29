@@ -1,6 +1,0 @@
-uaf_nasa.test:
-  path: '/nasa'
-  defaults:
-    _controller: '\Drupal\uaf_nasa\Controller\NasaController::page'
-  requirements:
-    _access: 'TRUE'

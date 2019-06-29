@@ -22,3 +22,11 @@ function uaf_nasa_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_cron().
+ */
+function uaf_nasa_cron() {
+  $consumer = \Drupal::getContainer()->get('uaf_nasa.consumer');
+  $consumer->importExoplanets();
+}

@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * The uaf_nasa drush commands.
+ */
+
+/**
  * Implements hook_drush_command().
  */
 function uaf_nasa_drush_command() {
