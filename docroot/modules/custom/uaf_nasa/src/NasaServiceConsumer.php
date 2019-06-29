@@ -119,9 +119,9 @@ class NasaServiceConsumer {
 
       $fields = $node->getFields(FALSE);
       foreach ($fields as $field_name => $field) {
-        $json_fiel_name = substr($field_name, strlen('field_'), strlen($field_name));
-        if (isset($item->$json_fiel_name)) {
-          $node->$field_name->value = $item->$json_fiel_name;
+        $json_field_name = substr($field_name, strlen('field_'), strlen($field_name));
+        if (isset($item->$json_field_name)) {
+          $node->$field_name->value = $item->$json_field_name;
         }
       }
 
