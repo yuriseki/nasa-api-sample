@@ -96,11 +96,3 @@ drush import-exoplanets
 ```
 http://dev.uaf
 ```
-
-## How to access the project demo:
-Access the url http://uafjsd9uap9z6.devcloud.acquia-sites.com in your browser.
-If you want to login as administrator, use the following credentials:
-```
-username: compucorp
-password: paswdCompucorp 
-```
